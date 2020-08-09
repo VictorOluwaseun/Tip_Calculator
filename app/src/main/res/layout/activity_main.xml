@@ -39,7 +39,7 @@
                 app:layout_constraintVertical_bias="0.277" />
 
             <TextView
-                android:id="@+id/amountTextView"
+                android:id="@+id/txtAmount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -77,21 +77,21 @@
                 android:text="@string/bill_amount"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@id/textView4"
-                app:layout_constraintEnd_toStartOf="@id/editTextNumber1"
+                app:layout_constraintEnd_toStartOf="@id/edtBillAmt"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.241" />
 
             <EditText
-                android:id="@+id/editTextNumber1"
+                android:id="@+id/edtBillAmt"
                 android:layout_width="156dp"
                 android:layout_height="42dp"
                 android:layout_marginTop="36dp"
                 android:autofillHints=""
                 android:ems="10"
                 android:inputType="number"
-                app:layout_constraintBottom_toTopOf="@id/editViewSplit"
+                app:layout_constraintBottom_toTopOf="@id/edvSplit"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.831"
                 app:layout_constraintStart_toEndOf="@+id/textView3"
@@ -104,13 +104,13 @@
                 android:text="@string/split"
                 android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@id/textView6"
-                app:layout_constraintEnd_toStartOf="@id/editViewSplit"
+                app:layout_constraintEnd_toStartOf="@id/edvSplit"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView3"
                 app:layout_constraintVertical_bias="0.373" />
 
             <EditText
-                android:id="@+id/editViewSplit"
+                android:id="@+id/edvSplit"
                 android:layout_width="154dp"
                 android:layout_height="46dp"
 
@@ -118,7 +118,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.761"
                 app:layout_constraintStart_toEndOf="@+id/textView4"
-                app:layout_constraintTop_toBottomOf="@+id/editTextNumber1" />
+                app:layout_constraintTop_toBottomOf="@+id/edtBillAmt" />
 
             <TextView
                 android:id="@+id/textView6"
@@ -172,7 +172,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnCal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_button"
