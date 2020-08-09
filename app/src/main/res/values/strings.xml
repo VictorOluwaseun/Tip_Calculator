@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Tip Calculator</string>
+    <string name="card_text">Total Per Person</string>
+    <string name="total_amount">$94.29</string>
+    <string name="bill_amount">Bill Amount</string>
+    <string name="split">Split</string>
+    <string name="Tip_amount">Tip Amount</string>
+    <string name="text_button">Calculate</string>
 </resources>
