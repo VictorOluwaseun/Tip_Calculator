@@ -3,6 +3,7 @@ package com.example.tipcalculator
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,12 +16,20 @@ class MainActivity : AppCompatActivity() {
          *
          */
 
-        var getTip = tip(5, 10, 5000)
+        btn_10percent.setOnClickListener{ Log.d("Ans", "${it}")}
+
+        btnCal.setOnClickListener{
+            val getTip = Tip(edvSplit.toString().toInt(), 10, edtBillAmt.toString().toInt())
+            val billPerPerson = getTip.getPerPerson() // method getPerPerson() is in charge of getting the value per person.
+            txtAmount.text = "$billPerPerson"
+        }
 
 
-        var billPerPerson = getTip.getPerPerson() // method getPerPerson() is in charge of getting the value per person.
 
-        Log.d("Ans", "$billPerPerson") // log the output. You can delete this code later
+
+//        Log.d("Ans", "$billPerPerson") // log the output. You can delete this code later
+
+
 
     }
 }

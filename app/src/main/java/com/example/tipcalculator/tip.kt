@@ -1,6 +1,6 @@
 package com.example.tipcalculator
 
-class tip(numberOfPeople: Int, tipPercentage: Int, billAmount: Int){
+class Tip(numberOfPeople: Int, tipPercentage: Int, billAmount: Int){
 
     var numberOfPeople: Double = numberOfPeople.toDouble()
     var tipPercentage: Double = tipPercentage.toDouble()
